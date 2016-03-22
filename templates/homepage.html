@@ -5,7 +5,32 @@
         <div class="page-header">
             <h1 class="h4">Weakref usage:</h1>
         </div>
-        <p>3 instances of Keeper class:</p>
+        <p>Instances of Keeper class:</p>
         <pre>{{ class_children }}</pre>
+
+        <div class="page-header">
+            <h2 class="h4">Payments processing:</h2>
+        </div>
+
+        <form method="POST">
+            {% csrf_token %}
+            <div class="form-group">
+                <label id="{{ form.user.id_for_label }}">{{ form.user.label }}</label>
+                {{ form.user }}
+                {{ form.user.errors }}
+            </div>
+            <div class="form-group">
+                <label id="{{ form.receivers.id_for_label }}">{{ form.receivers.label }}</label>
+                {{ form.receivers }}
+                {{ form.receivers.errors }}
+                <p class="help-block">Type users INN to send payment, comma-separated</p>
+            </div>
+            <div class="form-group">
+                <label id="{{ form.amount.id_for_label }}">{{ form.amount.label }}</label>
+                {{ form.amount }}
+                {{ form.amount.errors }}
+            </div>
+            <button type="submit" class="btn btn-primary">Send payment</button>
+        </form>
     </div>
 {% endblock %}

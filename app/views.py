@@ -1,11 +1,13 @@
 # coding: utf-8
-from django.views.generic import TemplateView
+from django.views.generic import TemplateView, FormView
 
 from .classes import Keeper
+from .forms import PaymentForm
 
 
-class HomepageView(TemplateView):
+class HomepageView(TemplateView, FormView):
     template_name = 'homepage.html'
+    form_class = PaymentForm
 
     @staticmethod
     def get_class_children():
