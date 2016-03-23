@@ -13,4 +13,4 @@ Install
 
 Testing
 -------
-To run tests you are just need to run `py.test`: `py.test ./tests`
+To run tests you are just need to run `py.test`: `py.test --ds=conf.dev.settings ./tests`
