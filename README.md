@@ -9,7 +9,7 @@ Install
 5. Run migrations: `python manage.py migrate`
 6. Install fixtures: `python manage.py loaddata ./app/fixtures/users.json`
 7. Run server: `python manage.py runsever`
-8. Navigate your browser to http://127.0.0.1
+8. Navigate your browser to http://127.0.0.1:8000
 
 Testing
 -------
