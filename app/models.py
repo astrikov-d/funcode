@@ -1,6 +1,8 @@
 # coding: utf-8
-from django.db import models
+from decimal import Decimal
+
 from django.contrib.auth.models import AbstractBaseUser
+from django.db import models
 
 
 class AppUser(AbstractBaseUser):
@@ -18,7 +20,7 @@ class AppUser(AbstractBaseUser):
         if amount < 0 and not self.can_be_charged(amount * -1):
             return
 
-        self.balance += amount
+        self.balance += Decimal(amount)
         self.save(update_fields=['balance'])
         return self.balance
 

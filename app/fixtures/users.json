@@ -1,0 +1,35 @@
+[
+    {
+        "model": "app.appuser",
+        "pk": 1,
+        "fields": {
+            "password": "",
+            "last_login": null,
+            "email": "user@example.com",
+            "balance": "50.00",
+            "inn": "1234567890"
+        }
+    },
+    {
+        "model": "app.appuser",
+        "pk": 2,
+        "fields": {
+            "password": "",
+            "last_login": null,
+            "email": "user_1@example.com",
+            "balance": "0.00",
+            "inn": "1234567890"
+        }
+    },
+    {
+        "model": "app.appuser",
+        "pk": 3,
+        "fields": {
+            "password": "",
+            "last_login": null,
+            "email": "user_2@example.com",
+            "balance": "0.00",
+            "inn": "1111111111"
+        }
+    }
+]

@@ -1,5 +1,5 @@
 # coding: utf-8
-from app.decorators import cache_decorator, Cache
+from app.decorators import Cache, cache_decorator
 
 
 def test_cache():

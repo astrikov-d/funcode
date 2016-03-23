@@ -1,6 +1,4 @@
 # coding: utf-8
-
-
 class reverse_gen(object):
 
     def __init__(self, iterable):
