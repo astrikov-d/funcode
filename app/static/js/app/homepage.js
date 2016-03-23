@@ -7,7 +7,7 @@ $(function () {
         },
         success: function (response) {
             if (response.result == 'success') {
-
+                alert('Your payment sent!');
             } else {
                 for (var index in response.errors) {
                     if (response.errors.hasOwnProperty(index)) {
